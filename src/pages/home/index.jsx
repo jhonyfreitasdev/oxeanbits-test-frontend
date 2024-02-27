@@ -1,8 +1,9 @@
 import { MoviesList } from "../../components/movies-list";
+import "./index.sass";
 
 export const Home = () => {
     return ( 
-        <main>
+        <main className="home-container">
             <MoviesList />
         </main>
     );
