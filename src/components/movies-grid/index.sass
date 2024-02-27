@@ -2,6 +2,7 @@
     display: flex
     justify-content: center
     align-items: center
+    overflow: auto
 
     .grid
         overflow: hidden
@@ -19,25 +20,30 @@
                 background-color: #1d35d4
                 border: none
                 font-weight: 500
-                box-shadow: 1px 1px 5px #0006
+                box-shadow: 1px 1px 5px #00000060
                 transition: 0.4s ease-in-out
 
                 &:hover
                     transform: translateY(-2px)
 
         .k-grid-table col:nth-of-type(1), .k-grid-header col:nth-of-type(1)
-            width: 160px
+            width: 150px
+        
+        .k-grid-table col:nth-of-type(2), .k-grid-header col:nth-of-type(2)
+            min-width: 130px
 
         .k-grid-table col:nth-of-type(3), .k-grid-header col:nth-of-type(3)
-            width: 160px
+            width: 130px
 
         .k-grid-table col:nth-of-type(4), .k-grid-header col:nth-of-type(4)
-            width: 150px
+            width: 140px
 
         .k-grid-table col:nth-of-type(5), .k-grid-header col:nth-of-type(5)
-            width: 160px
+            width: 120px
 
         .k-grid-header
+            padding-right: 15px
+
             .k-column-title
                 font-size: 16px
 
@@ -63,3 +69,5 @@
             .k-pager-numbers
                 .k-button
                     color: #1d35d4
+
+@import '../../assets/styles/responsive.sass'
