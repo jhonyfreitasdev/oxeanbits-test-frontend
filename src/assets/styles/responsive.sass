@@ -1,0 +1,33 @@
+@media screen and (max-width: 1024px)
+    .grid-container
+        .grid
+            width: 95%
+            height: 95vh
+            padding: 10p
+
+            .k-grid-header
+                .k-column-title
+                    font-size: 14px
+
+@media screen and (max-width: 768px)
+    .grid-container
+        .grid
+            .k-grid-table col:nth-of-type(1), .k-grid-header col:nth-of-type(1)
+                width: 100px
+
+                .k-grid-table col:nth-of-type(3), .k-grid-header col:nth-of-type(3)
+                    width: 100px
+
+                .k-grid-table col:nth-of-type(4), .k-grid-header col:nth-of-type(4)
+                    width: 100px
+
+                .k-grid-table col:nth-of-type(5), .k-grid-header col:nth-of-type(5)
+                    width: 100px
+
+            .k-grid-header
+                .k-filtercell
+                    .k-input
+                        height: 20px
+                    .k-button
+                        width: 19px
+                        height: 19px
