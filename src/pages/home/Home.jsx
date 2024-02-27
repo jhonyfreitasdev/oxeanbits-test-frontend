@@ -1,4 +1,4 @@
-import { MoviesGrid } from "../../components/movies-grid";
+import { MoviesGrid } from "../../components/movies-grid/MoviesGrid";
 import "./index.sass";
 
 export const Home = () => {
