@@ -1,34 +1,30 @@
 import { useState } from "react";
 import { Grid, GridColumn as Column } from "@progress/kendo-react-grid";
+import { process } from "@progress/kendo-data-query";
 import { moviesList } from "../../services/movies-api";
-import { filterBy } from "@progress/kendo-data-query";
 import '@progress/kendo-theme-default/dist/all.css';
 import "./index.sass";
 
 export const MoviesList = () => {
-    const [filter, serFilter] = useState();
-    const [skip, setSkip] = useState(0);
-    const [take, setTake] = useState(8);
+    const [dataState, setDataState] = useState({take: 5,skip: 0});
+    const [filterResult, setFilterResult] = useState(process(moviesList, dataState));
 
-    const onPageChange = (e) => {
-        setSkip(e.page.skip);
-        setTake(e.page.take);
+    function onDataStateChange(e) {
+        setDataState(e.dataState);
+        setFilterResult(process(moviesList, e.dataState));
     };
 
     return (
         <Grid
             className="grid"
-            data={filterBy(moviesList.slice(skip, skip + take), filter)}
+            data={filterResult}
             filterable={true}
-            filter={filter}
-            onFilterChange={e => serFilter(e.filter)}
             pageable={true}
-            skip={skip}
-            take={take}
-            onPageChange={onPageChange}
+            onDataStateChange={onDataStateChange}
             total={moviesList.length}
+            {...dataState}
         >
-            <Column className="column" field="title" title="Título" />
+            <Column className="column" field="title" filter="text" title="Título" />
             <Column className="column" field="overview" filterable={false} title="Visão geral" />
             <Column className="column" field="releaseDate" filter="date" title="Data de lançamento" />
             <Column className="column" field="voteAverage" filter="numeric" title="Nota" />
