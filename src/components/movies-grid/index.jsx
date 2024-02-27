@@ -7,7 +7,7 @@ import '@progress/kendo-theme-default/dist/all.css';
 import "./index.sass";
 
 export const MoviesGrid = () => {
-    const [dataState, setDataState] = useState({ take: 5, skip: 0 });
+    const [dataState, setDataState] = useState({ take: 10, skip: 0 });
     let gridPDFExport;
 
     const exportPDF = () => { gridPDFExport.save() }
@@ -20,15 +20,14 @@ export const MoviesGrid = () => {
             data={process(moviesList, dataState)}
             filterable={true}
             pageable={true}
+            {...dataState}
             onDataStateChange={onDataStateChange}
             total={moviesList.length}
-            {...dataState}  
         >
             <GridToolbar>
                 <button
-                    title="Export PDF"
+                    title="Export PDF" onClick={exportPDF}
                     className="k-button k-button-md k-rounded-md k-button-solid k-button-solid-primary"
-                    onClick={exportPDF}
                 >
                     Export PDF
                 </button>
@@ -37,14 +36,14 @@ export const MoviesGrid = () => {
             <Column className="column" field="overview" filterable={false} title="Overview" />
             <Column className="column" field="releaseDate" filter="date" title="Release Date" />
             <Column className="column" field="voteAverage" filter="numeric" title="Note" />
-            <Column className="column" field="originalLanguage" title="Original Lang" />
+            <Column className="column" field="originalLanguage" filter="text" title="Original Lang" />
         </Grid>
     )
 
     return (
         <div className="grid-container">
             {grid}
-            <GridPDFExport ref={(pdfExport) => (gridPDFExport = pdfExport)}>
+            <GridPDFExport ref={(pdfExport) => (gridPDFExport = pdfExport)} fileName="movies-export.pdf">
                 {grid}
             </GridPDFExport>
         </div>
