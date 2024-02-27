@@ -11,7 +11,6 @@ export const MoviesGrid = () => {
     let gridPDFExport;
 
     const exportPDF = () => { gridPDFExport.save() }
-
     const onDataStateChange = e => { setDataState(e.dataState) };
 
     const grid = (
