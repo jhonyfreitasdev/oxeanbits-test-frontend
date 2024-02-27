@@ -6,6 +6,7 @@
     "@progress/kendo-data-query": "^1.7.0",
     "@progress/kendo-react-animation": "^7.2.2",
     "@progress/kendo-react-grid": "^7.2.2",
+    "@progress/kendo-react-pdf": "^7.2.3",
     "@progress/kendo-theme-default": "^7.2.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
