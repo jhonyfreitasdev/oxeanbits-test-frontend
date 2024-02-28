@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Teste Front End Oxeanbits
+Teste tecnico para empresa Oxeanbits  
+ 
+## 🔗 Acesso ao deploy do projeto
+<a href="https://oxeanbits-test-frontend.vercel.app/">Clique aqui para ir para a página</a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição 
+- Um Grid feito com a biblioteca Kando UI com vários componentes de Inteface de usuários.
+- Possui uma lista de filmes que é fornecida através de uma API.
+<br/>
 
-## Available Scripts
+## Funcionalidades
+- Possui fitros em cada coluna para refinar suas buscas.
+- Tem um sistema páginação onde pode navegar por todas as páginas da lista.
+- Possui também um botão para exportar a página para um arquivo em PDF.  
+<br/>
 
-In the project directory, you can run:
+## 🛠 Skills
+<div style="display: inline_block"><br>
+  <img align="center" alt="React" height="30" width="40" src="src/assets/icons/icon-react.png">
+  <img align="center" alt="Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+  <img align="center" alt="Sass" height="30" width="35" src="src/assets/icons/icon-sass.png">
+  <img align="center" alt="Jest" height="30" width="35" src="src/assets/icons/icon-jest.png">
+</div><br/>
 
-### `npm start`
+- O projeto é uma Single Page Application feita com React.JS juntamente com JavaScript, utiliza o React Router Dom para criar a página de navegação, a biblioteca Kendo UI para componentes de interface de usuários, hooks para consumir API e é utilizado o pré-processador Saas para aplicar o estilo.
+<br/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Passo a passo para rodar o projeto
 
-### `npm test`
+### Copiando o projeto para sua maquina
+- `git clone https://github.com/jhonyfreitasdev/oxeanbits-test-frontend.git`
+- Copie o código acima no terminal no diretório desejado.
+ 
+### Instalando os pacotes necessários para compliar e rodar o projeto  
+- `npm install`
+- Com o editor de código aberto ou o terminal mesmo rode o código acima para instalar todas dependências.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Inicializando o projeto 
+- `npm start`
+- Depois com as dependencias instaladas é só rodar o comando acima para executar o projeto em sua máquina.  
 
-### `npm run build`
+### Rodando testes
+- `npm test`
+- Basta rodar o este comando para rodar os teste unitários.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br/>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📤 Feedback
+Se interessou pelo meu trabalho ou tem algum feedback? <br/> 
+Entre em contato comigo:
+<br/>
+ 
+<p align="left"> 
+ <a href="https://www.linkedin.com/in/jhony-freitas/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="40" height="35" /></a>
+ <a href ="https://api.whatsapp.com/send?phone=5511948127577&text" target="_blank" rel="noreferrer"><img src="./src/assets/icons/icon-whatsapp.png" width="40" height="35" /></a>
+ <a href ="mailto:jhony00._@hotmail.com" target="_blank" rel="noreferrer"><img src="src/assets/icons/icon-mail.png" width="40" height="35" /></a>
+ <a href="https://discord.com/users/jhonyFreitas#1359" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/discord.svg" width="40" height="35" /></a> 
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ </p>
