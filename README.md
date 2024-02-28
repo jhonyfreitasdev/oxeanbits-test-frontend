@@ -1,17 +1,17 @@
 # Teste Front End Oxeanbits
-Teste tecnico para empresa Oxeanbits  
+Teste técnico para empresa Oxeanbits  
  
 ## 🔗 Acesso ao deploy do projeto
 <a href="https://oxeanbits-test-frontend.vercel.app/">Clique aqui para ir para a página</a>
 
 ## Descrição 
-- Um Grid feito com a biblioteca Kando UI com vários componentes de Inteface de usuários.
+- Um Grid feito com a biblioteca Kando UI com vários componentes de Interface de usuários.
 - Possui uma lista de filmes que é fornecida através de uma API.
 <br/>
 
 ## Funcionalidades
-- Possui fitros em cada coluna para refinar suas buscas.
-- Tem um sistema páginação onde pode navegar por todas as páginas da lista.
+- Possui filtros em cada coluna para refinar suas buscas.
+- Tem um sistema paginação onde pode navegar por todas as páginas da lista.
 - Possui também um botão para exportar a página para um arquivo em PDF.  
 <br/>
 
@@ -35,15 +35,15 @@ Teste tecnico para empresa Oxeanbits
  
 ### Instalando os pacotes necessários para compliar e rodar o projeto  
 - `npm install`
-- Com o editor de código aberto ou o terminal mesmo rode o código acima para instalar todas dependências.
+- Com o editor de código aberto ou o terminal mesmo rode o código acima para instalar todas as dependências.
 
 ### Inicializando o projeto 
 - `npm start`
-- Depois com as dependencias instaladas é só rodar o comando acima para executar o projeto em sua máquina.  
+- Depois com as dependências instaladas é só rodar o comando acima para executar o projeto em sua máquina.  
 
 ### Rodando testes
 - `npm test`
-- Basta rodar o este comando para rodar os teste unitários.
+- Basta rodar o este comando para rodar os testes unitários.
 
 <br/>
 
