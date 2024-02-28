@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Grid, GridToolbar, GridColumn as Column } from "@progress/kendo-react-grid";
 import { process } from "@progress/kendo-data-query";
 import { GridPDFExport } from "@progress/kendo-react-pdf";
-import { getMovies } from "../../services/movies-api";
+import { fetchMoviesData } from "../../services/movies-api";
 import '@progress/kendo-theme-default/dist/all.css';
 import "./index.sass";
 
@@ -13,8 +13,8 @@ export const MoviesGrid = () => {
 
     useEffect(() => {
         const fetchMovies = async () => {
-            const movies = await getMovies();
-            setMoviesList(movies);
+            const data = await fetchMoviesData();
+            setMoviesList(data);
         };
         fetchMovies();
     }, []);
