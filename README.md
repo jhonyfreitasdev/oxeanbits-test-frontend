@@ -42,7 +42,7 @@ Teste técnico para empresa Oxeanbits
 - Depois com as dependências instaladas é só rodar o comando acima para executar o projeto em sua máquina.  
 
 ### Rodando testes
-- `npm test`
+- `npm test src/components/movies-grid/MoviesGrid.test.js`
 - Basta rodar o este comando para rodar os testes unitários.
 
 <br/>
