@@ -33,7 +33,7 @@ Teste técnico para empresa Oxeanbits
 - `git clone https://github.com/jhonyfreitasdev/oxeanbits-test-frontend.git`
 - Copie o código acima no terminal no diretório desejado.
  
-### Instalando os pacotes necessários para compliar e rodar o projeto  
+### Instalando os pacotes necessários para compilar e rodar o projeto  
 - `npm install`
 - Com o editor de código aberto ou o terminal mesmo rode o código acima para instalar todas as dependências.
 
